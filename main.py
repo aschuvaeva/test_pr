@@ -30,6 +30,7 @@ def stat(words):
 start = timeit.default_timer()
 stat(words)
 stop = timeit.default_timer()
-execution_time = stop - start
+run_time = stop - start
 
-print("Program Executed in ", execution_time, " second")
+print("Program runs in ", run_time, " second")
+
