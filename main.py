@@ -1,3 +1,4 @@
+import timeit
 s = input()
 words = s.split()
 
@@ -26,4 +27,9 @@ def stat(words):
         print("-1")
 
 
+start = timeit.default_timer()
 stat(words)
+stop = timeit.default_timer()
+execution_time = stop - start
+
+print("Program Executed in ", execution_time, " second")
